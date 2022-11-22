@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserMaster.master.cs" Inherits="application_nest.User.UserMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="../css/usermaster.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id ="page">
+        <div id ="header"></div>
+        <div id ="menu">
+            <asp:HyperLink ID="HyperLink1" runat="server" CssClass="h1" NavigateUrl="~/User/user_home.aspx">Home</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink2" runat="server" CssClass="h1" NavigateUrl="~/User/complaints.aspx">Product</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink3" runat="server" CssClass="h1" NavigateUrl="~/User/userviewcomplaint.aspx">View Complaint</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink4" runat="server" CssClass="h1" NavigateUrl="~/User/queries.aspx">Ask Questions</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Guest/logout.aspx">Log Out</asp:HyperLink>
+            
+        </div>
+        <div id ="content">
+    <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           </asp:ContentPlaceHolder>
+    </form>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="application_nest.Guest.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="../css/usermaster.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <div id ="page">
+        <div id ="header"></div>
+        <div id ="menu">
+            <asp:HyperLink ID="HyperLink1" runat="server" CssClass="h1" NavigateUrl="~/Guest/register.aspx">Registration</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink2" runat="server" CssClass="h1" NavigateUrl="~/Guest/login.aspx">Login</asp:HyperLink>       
+            </div>
+        <div id ="content">
+    <form id="form2" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           </asp:ContentPlaceHolder>
+    </form>
+    </div>
+
+</div>
+</body>
+</html>

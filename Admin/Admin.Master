@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.Master.cs" Inherits="application_nest.Admin.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <link href="../css/usermaster.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+ <div id ="page">
+        <div id ="header"></div>
+        <div id ="menu">
+            <asp:HyperLink ID="HyperLink1" runat="server" CssClass="h1" NavigateUrl="~/Admin/admin_home.aspx">Home</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink2" runat="server" CssClass="h1" NavigateUrl="~/Admin/product_registration.aspx">Product Register</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink3" runat="server" CssClass="h1" NavigateUrl="~/Admin/admin_view_confirm_users.aspx">Confirm User</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink4" runat="server" CssClass="h1" NavigateUrl="~/Admin/admin_view_complaints.aspx">View Complaint</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink7" runat="server" CssClass="h1" NavigateUrl="~/Admin/admin_view_query.aspx">View Query</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink6" runat="server" CssClass="h1" NavigateUrl="~/Guest/logout.aspx">Log Out</asp:HyperLink>
+            
+        </div>
+        <div id ="content">
+    <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           </asp:ContentPlaceHolder>
+    </form>
+    </div>
+
+</div></body>
+</html>

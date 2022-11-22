@@ -1,0 +1,44 @@
+﻿
+.section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh
+}
+
+.form
+{
+    position:relative;
+    padding:40px;
+}
+.form.inputbox{
+    width:200px;
+    margin-top:20px;
+}
+
+.style{
+    margin-top:10px;
+    width:200px;
+    box-shadow:0 25px 45px rgba(0,0,0,0.4);
+    border-radius:5px;
+    padding:10px 15px;
+    letter-spacing:1px;
+    font-size:15px;
+}
+
+.button-4 {
+    margin-top: 10px;
+    width: 100px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    background: #edb67b;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.button-4:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+}
